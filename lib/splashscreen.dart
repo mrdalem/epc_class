@@ -1,59 +1,32 @@
-import 'dart:async';
-import 'package:epc_class/splashscreen1.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 
-class Splashscreen extends StatefulWidget{
-  _Splashscreen createState() => _Splashscreen();
+class SplashscreenPage extends StatefulWidget {
+  @override
+  _SplashscreenPageState createState() => _SplashscreenPageState();
 }
 
-class _Splashscreen extends State<Splashscreen>{
-  void iniState(){
+class _SplashscreenPageState extends State<SplashscreenPage> {
+  @override
+  void initState() {
+    // TODO: implement initState
     super.initState();
-    splashscreenStart();
+    Timer(Duration(seconds: 4),
+            () => Navigator.pushReplacementNamed(context, '/splash'));
   }
-  // mengarahkan ke halaman splas1 setelah 3 detik
-  splashscreenStart() async{
-    var duration = const Duration(seconds: 3);
-    return Timer(duration, (){
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Splashscreen1()),
-      );
-    });
-  }
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0x1B44A6),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            //icon dari dalam folder
-           Image.asset(
-             "assets/logoepc.png",
-             width: 200.0,
-             height: 100.0,
-           ),
-
-            SizedBox(height: 24.0,),
-            //text
-            Text("EPC CLASS",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 30.0,
-              ),
-            )
-          ],
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Colors.blue[900],
+        child: Center(
+          child: Container(
+              child: Image.asset("assets/images/logo.png")),
         ),
       ),
     );
   }
-
-
 }
