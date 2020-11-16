@@ -1,4 +1,6 @@
+import 'package:epc_class/splashscreen2.dart';
 import 'package:flutter/material.dart';
+import 'login.dart';
 
 class SplashScreenOne extends StatefulWidget {
   @override
@@ -6,12 +8,13 @@ class SplashScreenOne extends StatefulWidget {
 }
 
 class _SplashScreenOneState extends State<SplashScreenOne> {
-
+  var blue =  const Color(0xff1B44A6);
+  var orange = const Color(0xffD98E28);
   @override
   Widget build(BuildContext context) {
     /** membuat element logo atas**/
     final logoatas = Container(
-      transform: Matrix4.translationValues(0.0, -65.0, 0.0),
+      transform: Matrix4.translationValues(0.0, -50.0, 0.0),
       child: Hero(
         tag: 'hero',
         child: CircleAvatar(
@@ -48,37 +51,9 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
         )),
     );
 
-    /** double button floating **/
-    final fbutton = Stack(
-      children: <Widget>[
-        Align(
-          alignment: Alignment.bottomLeft,
-          child: RaisedButton(
-            onPressed: () {},
-            child: const Text('LEWATI', style: TextStyle(fontSize: 16)),
-            color: const Color(0xffD98E28),
-            textColor: Colors.white,
-            padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
-            elevation: 0, //shadow
-          ),
-        ),
-        Align(
-          alignment: Alignment.bottomRight,
-          child: RaisedButton(
-            onPressed: () {},
-            child: const Text('SELANJUTNYA', style: TextStyle(fontSize: 16)),
-            color: const Color(0xff1B44A6),
-            textColor: Colors.white,
-            padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
-            elevation: 0,
-          ),
-        ),
-      ],
-    );
-
     /** eksekusi semua **/
     return MaterialApp(
-      title: "MoonLight",
+      title: "Splash1",
       home:Stack(children: <Widget>[
         Container(
           decoration: BoxDecoration(
@@ -117,9 +92,65 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
                 SizedBox(height: 100.0),
                 text1,
                 text2,
-                fbutton,
               ],
             ),
+          ),
+          bottomNavigationBar: Container(
+            height: 56,
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child:InkWell(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Login()),
+                      );
+                    },
+                    child:  Container(
+                      alignment: Alignment.center,
+                      color: this.orange,
+                      child: Text("LEWATI", style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                          color: Colors.white
+                      )),
+                    ),
+                  )
+                ),
+                Expanded(
+                  child: InkWell(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SplashScreenTwo()),
+                      );
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      color: this.blue,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                            child: Text("SELANJUTNYA", style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                color: Colors.white
+                            )),
+                          ),
+                          Container(
+                              margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                              child: Icon(Icons.arrow_forward, color: Colors.white)
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
           ),
         ),
       ]),
