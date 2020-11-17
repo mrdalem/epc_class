@@ -1,3 +1,4 @@
+import 'package:epc_class/page/pages.dart';
 import 'package:epc_class/splashscreen1.dart';
 import 'package:flutter/material.dart';
 class Login extends StatefulWidget {
@@ -163,7 +164,12 @@ class _LoginState extends State<Login>{
                   ),
                   Expanded(
                     child: InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => BerandaPage()),
+                        );
+                      },
                       child: Container(
                         alignment: Alignment.center,
                         color: this.blue,
