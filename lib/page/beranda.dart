@@ -14,7 +14,7 @@ class _BerandaPage extends State<BerandaPage> {
         body: Stack(
           children: <Widget>[
             Container(color: this.blue,),
-            SafeArea(child: Container(color: Color(0xffFFFFFF),)),
+            SafeArea(child: Container(color: Color(0xffE5E5E5),)),
             ListView(
               children: <Widget>[
                 Container(
@@ -220,34 +220,64 @@ class _BerandaPage extends State<BerandaPage> {
 
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(4.0, 50.0, 4.0, 25.0),
+                  margin: EdgeInsets.fromLTRB(4.0, 50.0, 4.0, 5.0),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Column(
-                        children: [
-                          Image.asset('assets/icon/ico_1.png'),
-                          Text("Kompetensi", style: TextStyle(
-                            color: Color(0xff474646),
-                            fontSize: 15,
-                            height: 2
-                          ),
-                          ),
-                        ],
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: Offset(0,0),
+                            )
+                          ],
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                        ),
+                        padding: EdgeInsets.fromLTRB(39, 26, 39, 18),
+                        child: Column(
+                          children: [
+                            Image.asset('assets/icon/ico_1.png'),
+                            Text("Kompetensi", style: TextStyle(
+                                color: Color(0xff474646),
+                                fontSize: 15,
+                                height: 2.5
+                            ),
+                            ),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Column(
-                        children: [
-                          Image.asset('assets/icon/ico_2.png'),
-                          Text("Sertifikat", style: TextStyle(
-                            color: Color(0xff474646),
-                            fontSize: 15,
-                            height: 2
-                          ),
-                          ),
-                        ],
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: Offset(0,0),
+                            )
+                          ],
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                        ),
+                        padding: EdgeInsets.fromLTRB(50, 30, 50, 20),
+                        child: Column(
+                          children: [
+                            Image.asset('assets/icon/ico_2.png'),
+                            Text("Sertifikat", style: TextStyle(
+                                color: Color(0xff474646),
+                                fontSize: 15,
+                                height: 2
+                            ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -255,32 +285,62 @@ class _BerandaPage extends State<BerandaPage> {
                 Container(
                   margin: EdgeInsets.fromLTRB(4.0, 20.0, 4.0, 25.0),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Column(
-                        children: [
-                          Image.asset('assets/icon/ico_3.png'),
-                          Text("Materi", style: TextStyle(
-                              color: Color(0xff474646),
-                              fontSize: 15,
-                              height: 2
-                          ),
-                          ),
-                        ],
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.2),
+                                spreadRadius: 2,
+                                blurRadius: 8,
+                                offset: Offset(0,0),
+                              )
+                            ],
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                        ),
+                        padding: EdgeInsets.fromLTRB(50, 30, 50, 20),
+                        child: Column(
+                          children: [
+                            Image.asset('assets/icon/ico_3.png'),
+                            Text("Materi", style: TextStyle(
+                                color: Color(0xff474646),
+                                fontSize: 15,
+                                height: 2.5
+                            ),
+                            ),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Column(
-                        children: [
-                          Image.asset('assets/icon/ico_4.png'),
-                          Text("Akun", style: TextStyle(
-                              color: Color(0xff474646),
-                              fontSize: 15,
-                              height: 2
-                          ),
-                          ),
-                        ],
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 8,
+                              offset: Offset(0,0),
+                            )
+                          ],
+                          borderRadius: BorderRadius.all(Radius.circular(15)),
+                        ),
+                        padding: EdgeInsets.fromLTRB(50, 30, 50, 20),
+                        child: Column(
+                          children: [
+                            Image.asset('assets/icon/ico_4.png'),
+                            Text("Akun", style: TextStyle(
+                                color: Color(0xff474646),
+                                fontSize: 15,
+                                height: 2
+                            ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
