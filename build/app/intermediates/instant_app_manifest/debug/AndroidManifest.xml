@@ -24,8 +24,8 @@
         android:name="io.flutter.app.FlutterApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="epc_class" >
+        android:icon="@mipmap/epcclasslogo"
+        android:label="EPC CLASS" >
         <activity
             android:name="com.example.epc_class.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

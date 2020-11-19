@@ -19,7 +19,7 @@ class _BerandaPage extends State<BerandaPage> {
               ListView(
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.fromLTRB(4.0, 260.0, 4.0, 5.0),
+                    margin: EdgeInsets.fromLTRB(4.0, 278.0, 4.0, 5.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -337,10 +337,10 @@ class _BerandaPage extends State<BerandaPage> {
                     )
                 ),
                 padding: EdgeInsets.fromLTRB(4.0, 20, 4.0, 30),
-                height: 260,
+                height: 278,
                 child: Column(
                   children: [
-                    SizedBox(height: 10.0,),
+                    SizedBox(height: 30),
                     Image.asset('assets/images/logowhite.png', height: 28.0, width: 150.0,),
                     SizedBox(height: 20.0,),
                     Row(
