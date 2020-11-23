@@ -1,5 +1,6 @@
 import 'package:epc_class/splashscreen2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'login.dart';
 
 class SplashScreenOne extends StatefulWidget {
@@ -12,6 +13,10 @@ class _SplashScreenOneState extends State<SplashScreenOne> {
   var orange = const Color(0xffD98E28);
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, // transparent status bar
+    ));
     /** membuat element logo atas**/
     final logoatas = Container(
       transform: Matrix4.translationValues(0.0, -50.0, 0.0),

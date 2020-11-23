@@ -76,8 +76,16 @@
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\epcclasslogo.png"
+    },
+    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xhdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xhdpi\\epcclasslogo.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
@@ -88,8 +96,16 @@
         "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\epcclasslogo.png"
+    },
+    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable_notification_bg.xml.flat",
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-mdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-mdpi\\epcclasslogo.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -120,12 +136,12 @@
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -138,6 +154,10 @@
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\layout_custom_dialog.xml.flat",
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\mipmap-hdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-hdpi\\epcclasslogo.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",

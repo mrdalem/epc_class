@@ -18,7 +18,7 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/epcclasslogo"
         android:label="EPC CLASS" >
         <activity
             android:name="com.example.epc_class.MainActivity"

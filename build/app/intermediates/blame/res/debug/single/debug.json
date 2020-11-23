@@ -12,12 +12,12 @@
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -92,12 +92,12 @@
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout\\notification_action.xml"
-    },
-    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_epcclasslogo.png.flat",
         "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-hdpi\\epcclasslogo.png"
+    },
+    {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -136,16 +136,16 @@
         "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_epcclasslogo.png.flat",
+        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-mdpi\\epcclasslogo.png"
+    },
+    {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\DOLIO DIGITAL CO\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
-        "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_epcclasslogo.png.flat",
-        "source": "C:\\epc_class\\android\\app\\src\\main\\res\\mipmap-mdpi\\epcclasslogo.png"
     },
     {
         "merged": "C:\\epc_class\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",

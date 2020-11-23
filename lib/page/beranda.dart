@@ -10,6 +10,10 @@ class _BerandaPage extends State<BerandaPage> {
   var orange  = const Color(0xffD98E28);
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, // transparent status bar
+    ));
       return MaterialApp(
         home: new Scaffold(
           body: Stack(
@@ -19,94 +23,102 @@ class _BerandaPage extends State<BerandaPage> {
               ListView(
                 children: <Widget>[
                   Container(
-                    margin: EdgeInsets.fromLTRB(4.0, 278.0, 4.0, 5.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.2),
-                                spreadRadius: 2,
-                                blurRadius: 8,
-                                offset: Offset(0,0),
-                              )
-                            ],
-                            borderRadius: BorderRadius.all(Radius.circular(15)),
-                          ),
-                          padding: EdgeInsets.fromLTRB(39, 26, 39, 18),
-                          child: Column(
-                            children: [
-                              Image.asset('assets/icon/ico_1.png'),
-                              Text("Kompetensi", style: TextStyle(
-                                  color: Color(0xff474646),
-                                  fontSize: 15,
-                                  height: 2.5
-                              ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.2),
-                                spreadRadius: 2,
-                                blurRadius: 8,
-                                offset: Offset(0,0),
-                              )
-                            ],
-                            borderRadius: BorderRadius.all(Radius.circular(15)),
-                          ),
-                          padding: EdgeInsets.fromLTRB(50, 30, 50, 20),
-                          child: Row(
-                            children: [
-                              Stack(
-                                overflow: Overflow.visible,
-                                children: [
-                                  Column(
-                                    children: [
-                                      Image.asset('assets/icon/ico_2.png'),
-                                      Text("Sertifikat", style: TextStyle(
-                                          color: Color(0xff474646),
-                                          fontSize: 15,
-                                          height: 2
-                                      ),
-                                      ),
-                                    ],
-                                  ),
-                                  Positioned(
-                                    right: -40,
-                                    top: -35,
-                                    child: Container(
-                                      width: 20.0,
-                                      height: 20.0,
-                                      decoration: BoxDecoration(
-                                          color: this.orange,
-                                          borderRadius: BorderRadius.circular(15.0)
-                                      ),
-                                      child: Center(
-                                        child: Text("2", style:  TextStyle(
-                                          color: Colors.white,
-                                        ),),
-                                      )
-                                    ),
+                      margin: EdgeInsets.fromLTRB(4.0, 278.0, 4.0, 5.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          new GestureDetector(
+                            onTap: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => KompetensiPage()),
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.2),
+                                    spreadRadius: 2,
+                                    blurRadius: 8,
+                                    offset: Offset(0,0),
                                   )
                                 ],
+                                borderRadius: BorderRadius.all(Radius.circular(15)),
                               ),
-                            ],
+                              padding: EdgeInsets.fromLTRB(39, 26, 39, 18),
+                              child: Column(
+                                children: [
+                                  Image.asset('assets/icon/ico_1.png'),
+                                  Text("Kompetensi", style: TextStyle(
+                                      color: Color(0xff474646),
+                                      fontSize: 15,
+                                      height: 2.5
+                                  ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
-                      ],
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.2),
+                                  spreadRadius: 2,
+                                  blurRadius: 8,
+                                  offset: Offset(0,0),
+                                )
+                              ],
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            padding: EdgeInsets.fromLTRB(50, 30, 50, 20),
+                            child: Row(
+                              children: [
+                                Stack(
+                                  overflow: Overflow.visible,
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Image.asset('assets/icon/ico_2.png'),
+                                        Text("Sertifikat", style: TextStyle(
+                                            color: Color(0xff474646),
+                                            fontSize: 15,
+                                            height: 2
+                                        ),
+                                        ),
+                                      ],
+                                    ),
+                                    Positioned(
+                                      right: -40,
+                                      top: -35,
+                                      child: Container(
+                                          width: 20.0,
+                                          height: 20.0,
+                                          decoration: BoxDecoration(
+                                              color: this.orange,
+                                              borderRadius: BorderRadius.circular(15.0)
+                                          ),
+                                          child: Center(
+                                            child: Text("2", style:  TextStyle(
+                                              color: Colors.white,
+                                            ),),
+                                          )
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
                   Container(
                     margin: EdgeInsets.fromLTRB(4.0, 20.0, 4.0, 0.0),
                     child: Row(
