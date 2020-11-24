@@ -76,18 +76,18 @@ class _KompetensiPage extends State<KompetensiPage> {
                         onTap: (){
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Accordion()),
+                            MaterialPageRoute(builder: (context) => KategoriPage()),
                           );
                         },
                         child: Container(
-                          height: MediaQuery.of(context).size.height / 8,
+                          height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 8 : MediaQuery.of(context).size.height / 4,
                           padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
-                          margin: EdgeInsets.fromLTRB(15, MediaQuery.of(context).size.height / 3.4, 15, 10),
+                          margin: EdgeInsets.fromLTRB(15, (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 3.4 : MediaQuery.of(context).size.height / 2, 15, 10),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.grey.withOpacity(0.2),
+                                color: Colors.grey.withOpacity(0.5),
                                 spreadRadius: 2,
                                 blurRadius: 8,
                                 offset: Offset(0,0),
@@ -190,14 +190,14 @@ class _KompetensiPage extends State<KompetensiPage> {
                         ),
                       ),
                       Container(
-                        height: MediaQuery.of(context).size.height / 8,
+                        height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 8 : MediaQuery.of(context).size.height / 4,
                         padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                         margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 8,
                               offset: Offset(0,0),
@@ -276,6 +276,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                                         bottomRight: Radius.circular(15.0)),
                                     color: this.orange),
                                 child:  Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Padding(
                                       padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
@@ -298,14 +299,14 @@ class _KompetensiPage extends State<KompetensiPage> {
                         ),
                       ),
                       Container(
-                        height: MediaQuery.of(context).size.height / 8,
+                        height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 8 : MediaQuery.of(context).size.height / 4,
                         padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                         margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 8,
                               offset: Offset(0,0),
@@ -377,7 +378,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                             Expanded(
                               flex: 25,
                               child: Container(
-                                height: MediaQuery.of(context).size.height/6.5,
+                                height: MediaQuery.of(context).size.height,
                                 padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(
@@ -408,14 +409,14 @@ class _KompetensiPage extends State<KompetensiPage> {
                         ),
                       ),
                       Container(
-                        height: MediaQuery.of(context).size.height / 8,
+                        height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 8 : MediaQuery.of(context).size.height / 4,
                         padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                         margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 8,
                               offset: Offset(0,0),
@@ -487,7 +488,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                             Expanded(
                               flex: 25,
                               child: Container(
-                                height: MediaQuery.of(context).size.height/6.5,
+                                height: MediaQuery.of(context).size.height,
                                 padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(
@@ -518,14 +519,14 @@ class _KompetensiPage extends State<KompetensiPage> {
                         ),
                       ),
                       Container(
-                        height: MediaQuery.of(context).size.height / 8,
+                        height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 8 : MediaQuery.of(context).size.height / 4,
                         padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
                         margin: EdgeInsets.fromLTRB(15, 5, 15, 10),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 8,
                               offset: Offset(0,0),
@@ -597,7 +598,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                             Expanded(
                               flex: 25,
                               child: Container(
-                                height: MediaQuery.of(context).size.height/6.5,
+                                height: MediaQuery.of(context).size.height,
                                 padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(
@@ -647,7 +648,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                       )
                   ),
                   padding: EdgeInsets.fromLTRB(4.0, 20, 4.0, 10),
-                  height: MediaQuery.of(context).size.height - 410,
+                  height: (MediaQuery.of(context).orientation == Orientation.portrait)? MediaQuery.of(context).size.height / 3.2 : MediaQuery.of(context).size.height / 2,
                   width: MediaQuery.of(context).size.width,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
