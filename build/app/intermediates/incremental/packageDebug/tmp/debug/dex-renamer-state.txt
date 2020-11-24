@@ -1,4 +1,4 @@
-#Tue Nov 24 09:08:42 SGT 2020
+#Tue Nov 24 16:51:43 SGT 2020
 base.0=C\:\\Users\\profd\\Documents\\epc_class\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
