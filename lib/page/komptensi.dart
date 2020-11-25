@@ -17,12 +17,21 @@ class _KompetensiPage extends State<KompetensiPage> {
     "Superintendent 4",
   ];
 
+  final GlobalKey globalKey = GlobalKey();
+  double getHeight = 0;
+
+  getWH() {
+    final containerHeight = globalKey.currentContext.size.height;
+    getHeight = double.tryParse("$containerHeight");
+  }
+
   @override
   Widget build(BuildContext context) {
     WidgetsFlutterBinding.ensureInitialized();
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent, // transparent status bar
     ));
+
     return WillPopScope(
         onWillPop: () async => false,
         child: MaterialApp(
@@ -174,6 +183,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                                       );
                                     },
                                     child: Container(
+                                      key: globalKey,
                                       margin: EdgeInsets.fromLTRB(15, 0, 15, 10),
                                       decoration: BoxDecoration(
                                         color: Colors.white,
@@ -206,7 +216,7 @@ class _KompetensiPage extends State<KompetensiPage> {
                                             ),
                                           ),
                                           Expanded(
-                                            flex: 75,
+                                            flex: 70,
                                             child: Container(
                                               child: Column(
                                                 children: [
@@ -249,15 +259,16 @@ class _KompetensiPage extends State<KompetensiPage> {
                                             ),
                                           ),
                                           Flexible(
-                                            flex: 25,
                                             fit: FlexFit.tight,
+                                            flex: 20,
                                             child: Container(
                                               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
                                               decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.only(
-                                                      topRight: Radius.circular(15.0),
-                                                      bottomRight: Radius.circular(15.0)),
-                                                  color: this.orange),
+                                                borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(15.0),
+                                                    bottomRight: Radius.circular(15.0)),
+                                                color: this.orange,
+                                              ),
                                               child:  Column(
                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                 children: <Widget>[
@@ -276,8 +287,8 @@ class _KompetensiPage extends State<KompetensiPage> {
                                                   ),),
                                                 ],
                                               ),
-                                            ),
-                                          ),
+                                            )
+                                          )
                                         ],
                                       ),
                                     ),
@@ -296,5 +307,4 @@ class _KompetensiPage extends State<KompetensiPage> {
         ),
     );
   }
-
 }
