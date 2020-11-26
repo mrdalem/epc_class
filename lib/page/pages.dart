@@ -7,3 +7,4 @@ part 'beranda.dart';
 part 'komptensi.dart';
 part 'kategori.dart';
 part 'pretest.dart';
+part 'pretest2.dart';

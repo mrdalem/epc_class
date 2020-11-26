@@ -27,7 +27,7 @@ class _PreTestPageState extends State<PreTestPage>{
               color: this.blue,
               width: MediaQuery.of(context).size.width,
               child: Container(
-                    margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                    margin: EdgeInsets.fromLTRB(0, 40, 0, 0),
                     child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -152,7 +152,7 @@ class _PreTestPageState extends State<PreTestPage>{
                             onTap: (){
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => KompetensiPage()),
+                                MaterialPageRoute(builder: (context) => PreTestPage2()),
                               );
                             },
                             child: Container(
@@ -202,11 +202,11 @@ class _PreTestPageState extends State<PreTestPage>{
                                 children: [
                                   Padding(
                                       padding: EdgeInsets.all(2),
-                                      child:  Text("Materi", style: TextStyle(color: Colors.white, fontSize: 14), textAlign: TextAlign.center,)
+                                      child:  Text("Materi", style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 14), textAlign: TextAlign.center,)
                                   ),
                                   Padding(
                                       padding: EdgeInsets.all(2),
-                                      child:  Icon(Icons.chevron_right, size: 15, color: Colors.white,)
+                                      child:  Icon(Icons.chevron_right, size: 15, color: Colors.white.withOpacity(0.5),)
                                   ),
                                 ]
                             ),
@@ -214,7 +214,7 @@ class _PreTestPageState extends State<PreTestPage>{
                                 children: [
                                   Padding(
                                       padding: EdgeInsets.all(2),
-                                      child:  Text("Post-test", style: TextStyle(color: Colors.white, fontSize: 14), textAlign: TextAlign.center,)
+                                      child:  Text("Post-test", style: TextStyle(color: Colors.white.withOpacity(0.5), fontSize: 14), textAlign: TextAlign.center,)
                                   ),
                                 ]
                             ),
@@ -276,6 +276,45 @@ class _PreTestPageState extends State<PreTestPage>{
                                       color: Color(0xff474646)
                                   )),
                                 ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Flexible(
+                                      flex: 33,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(15),
+                                        child: Image(
+                                          image: AssetImage('assets/icon/ico_bumn.png'),
+                                          height: 25,
+                                          width: 80,
+                                        )
+                                      )
+                                    ),
+                                    Flexible(
+                                        flex: 33,
+                                        child: Padding(
+                                            padding: EdgeInsets.all(15),
+                                            child: Image(
+                                              image: AssetImage('assets/icon/ico_waskita.png'),
+                                              height: 25,
+                                              width: 80,
+                                            )
+                                        )
+                                    ),
+                                    Flexible(
+                                        flex: 33,
+                                        child: Padding(
+                                            padding: EdgeInsets.all(15),
+                                            child: Image(
+                                              image: AssetImage('assets/icon/ico_epcd.png'),
+                                              height: 25,
+                                              width: 80,
+                                            )
+                                        )
+                                    ),
+                                  ],
+                                )
                               ],
                             )
                         ),
