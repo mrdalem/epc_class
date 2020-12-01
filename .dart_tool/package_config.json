@@ -128,12 +128,6 @@
       "languageVersion": "2.7"
     },
     {
-      "name": "responsive_grid",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_grid-1.2.1+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "sky_engine",
       "rootUri": "file:///C:/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -206,7 +200,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-11-27T02:24:49.470004Z",
+  "generated": "2020-11-23T06:04:12.401189Z",
   "generator": "pub",
   "generatorVersion": "2.10.3"
 }

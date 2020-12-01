@@ -8,17 +8,6 @@ class PreTestPage2 extends StatefulWidget{
 class _PreTestPage2State extends State<PreTestPage2>{
   var blue    = const Color(0xff1B44A6);
   var orange  = const Color(0xffD98E28);
-  bool isSelected = false;
-  //random list
-  Random random = new Random();
-  List list = [];
-  // list jwban
-  List listJwb = [
-    'A. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-    'B. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-    'C. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-    'D. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +15,6 @@ class _PreTestPage2State extends State<PreTestPage2>{
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: Colors.transparent, // transparent status bar
     ));
-    var jawaban = listJwb.asMap().values.toList()..shuffle();
 
     return WillPopScope(
       onWillPop: () async => false,
@@ -186,10 +174,12 @@ class _PreTestPage2State extends State<PreTestPage2>{
                       )
                   ),
                   backgroundColor: Colors.transparent,
+                  resizeToAvoidBottomInset: false,
                   body:
                    SingleChildScrollView(
                      child:
                      Container(
+                         height: MediaQuery.of(context).size.height,
                          child: Column(
                            children: <Widget>[
                              Card(
@@ -235,29 +225,72 @@ class _PreTestPage2State extends State<PreTestPage2>{
                                              ),
                                              Container(
                                                height: 200.0,
-                                                child:
-                                                ResponsiveGridList(
-                                                    desiredItemWidth: 100, // 100 kotak, 200 memanjang
-                                                    minSpacing: 5,
-                                                    children: jawaban.asMap().map((i,row) => MapEntry(i,
-                                                        GestureDetector(
-                                                            onTap: (){
-                                                              setState(() {
-                                                                 isSelected = true;
-                                                              });
-                                                            },
-                                                            child: Container(
-                                                              alignment: Alignment.topLeft,
-                                                              padding: EdgeInsets.all(10),
-                                                              decoration: BoxDecoration(
-                                                                color: Colors.white,
-                                                                borderRadius: BorderRadius.circular(10),
-                                                                border: Border.all(color: isSelected ? this.orange : Colors.grey[300], width: 1),
-                                                              ),
-                                                              child: Text(i.toString() + row.toString()),
-                                                        ))
-                                                    )).values.toList()
-                                                )
+                                               child: GridView.count(
+                                                 crossAxisCount: 2,
+                                                 crossAxisSpacing: 10.0,
+                                                 mainAxisSpacing: 0,
+                                                 childAspectRatio: 1.6,
+                                                 shrinkWrap: true,
+                                                 scrollDirection: Axis.vertical,
+                                                 children: [
+                                                   Column(
+                                                       crossAxisAlignment: CrossAxisAlignment.stretch,
+                                                       mainAxisAlignment: MainAxisAlignment.start,
+                                                       children: [
+                                                       Flexible(
+                                                         fit: FlexFit.loose,
+                                                         child: Container(
+                                                           padding: EdgeInsets.all(10),
+                                                           color: this.orange,
+                                                           child: Text("A. Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                                                         ),
+                                                       ),
+                                                     ],
+                                                   ),
+                                                   Column(
+                                                     crossAxisAlignment: CrossAxisAlignment.stretch,
+                                                     mainAxisAlignment: MainAxisAlignment.start,
+                                                     children: [
+                                                       Flexible(
+                                                         fit: FlexFit.loose,
+                                                         child: Container(
+                                                           padding: EdgeInsets.all(10),
+                                                           color: this.orange,
+                                                           child: Text("A. Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                                                         ),
+                                                       ),
+                                                     ],
+                                                   ),
+                                                   Column(
+                                                     crossAxisAlignment: CrossAxisAlignment.stretch,
+                                                     mainAxisAlignment: MainAxisAlignment.start,
+                                                     children: [
+                                                       Flexible(
+                                                         fit: FlexFit.loose,
+                                                         child: Container(
+                                                           padding: EdgeInsets.all(10),
+                                                           color: this.orange,
+                                                           child: Text("A. Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                                                         ),
+                                                       ),
+                                                     ],
+                                                   ),
+                                                   Column(
+                                                     crossAxisAlignment: CrossAxisAlignment.stretch,
+                                                     mainAxisAlignment: MainAxisAlignment.start,
+                                                     children: [
+                                                       Flexible(
+                                                         fit: FlexFit.loose,
+                                                         child: Container(
+                                                           padding: EdgeInsets.all(10),
+                                                           color: this.orange,
+                                                           child: Text("A. Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                                                         ),
+                                                       ),
+                                                     ],
+                                                   ),
+                                                 ],
+                                               ),
                                              )
                                            ],
                                          ),
@@ -316,7 +349,6 @@ class _PreTestPage2State extends State<PreTestPage2>{
     );
   }
 }
-
 void clicked2(BuildContext context, menu) {
   final scaffold = Scaffold.of(context);
   scaffold.showSnackBar(
